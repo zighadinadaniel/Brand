@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    
+    <div class="subscribe">
+        <p>Subscribe to our newsletter to get updates on our new designs</p>
+    </div>
+  <!--header-->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+        <a href="#" class="logo"><img src="../images/image0__1_-removebg-preview.png" alt=""></a>
+        <!---cart icon--->
+        <input type="checkbox" id="check">
+       
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/shop.html">Shop</a></li>
+            <li><a href="html/about.html">About us</a></li>
+            <button class="search">Search for item</button>
+        </ul>
+
+        <label for="check">
+            <i class="menu"><img src="images/menu-regular-24.png" alt=""></i>
+        </label>
+
+
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <svg class="icon">
+            <use xlink:href="images/sprite.svg#icon-cart"></use>
+        </svg>
+    </div>
+ 
+</header>
+<!---Cart--->
+<div class="cart inactive">
+    <h2 class="cart-title">Your cart</h2>
+    <!---content--->
+    <div class="cart-content">
+        <div class="cart-box">
+            <img src="images/1.jpg" alt="" class="cart-img">
+            <div class="detail-box">
+                <div class="cart-product-title">Earbuds</div>
+                <div class="cart-price">$25</div>
+                <input type="number" value="1" class="cart-quantity ">
+            </div>
+            <!---Remove cart-->
+            <i class='bx bxs-trash-alt cart-remove'></i>
+        </div>
+    </div>
+    <!-- Total -->
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$10</div>
+    </div>
+    <!--- Buy buttton --->
+    <button type="button" class="btn-buy">Buy Now</button>
+    <!--- Cart Close --->
+    <i class='bx bx-x' id="close-cart"></i>
+</div>
+
+<section>
+    <div class="about">
+        <h1>About us</h1>
+        <h3>'The strength of TATTIC is its excellence in Designing & Product
+            Development, nurtured by handpicked team of designers. The brand ’TATTIC’ is based in Lagos, Nigeria. 
+        
+            A perspective that places at the heart of its inspiring and operative principles basic values as uncompromised quality, valorisation of labou and freedom of creative expression. <br> By offering our customers goods that are produced ethically and responsibly, we hope to revolutionize the way our society interacts with the fashion industry.</h3>
+    </div>
+</section>
+<section>
+    <footer class="footer">
+        <div class="contact">
+            <img src="images/image0__1_-removebg-preview.png" alt="">
+            <h2>Contact us</h2>
+            <p>Follow us on</p>
+            <div class="socials">
+                <img src="images/twitter - Copy.png" alt="">
+                <img src="images/insta.png" alt="">
+            </div>
+
+            <h5>Terms and Conditions   |   Privacy  </h5>
+            
+        </div>
+        <div class="newsletter">
+            <h2>Subscribe to our newsletter</h2>
+            <h4>Be the first to receive updates on new drops</h4>
+            <div class="contact-form">
+                <form>
+                    <div>
+                        <input type="text" class="form-control" placeholder="First Name">
+                        <input type="text" class="form-control" placeholder="Last Namme">
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" placeholder="E-mail">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+                    
+                </form>
+                <input type="Submit" class="send-btn" value="send message">
+     
+        </div>
+        </div>
+
+      
+    </footer>
+</section>
+
+      <!-- Link to js --->
+      <script src="js/main.js"></script>
+</body>
+</html>

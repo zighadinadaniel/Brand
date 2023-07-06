@@ -1,0 +1,354 @@
+body{
+    
+}
+.subscribe{
+    width: 100%;
+    margin-top: -1.4%;
+    height: 2.8rem;
+    background-color: black;
+    /* outline: 2px solid red; */
+}
+.subscribe p{
+    font-size: 25px;
+    padding: 8px;
+    color: aliceblue;
+    text-align: center;
+}
+/* Header */
+header{
+    /* position: fixed; */
+    top: 0;
+    margin-left: 5%;
+    width: 90%;
+    z-index: 100;
+    /* box-shadow: 0 1px 4px hsl(0 4% 15% / 10%); */
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 110px;
+  /* outline: 2px solid red; */
+}
+
+ul{
+    float: left;
+    margin-right: 260px;
+}
+.nav ul li{
+    display: inline-block;
+    line-height: 90px;
+    /* margin: 0 15px; */
+}
+.nav ul li a{
+    color: rgba(0, 0, 0, 0.452);
+    font-size: 20px;
+    /* text-transform: uppercase; */
+    padding: 8px 11px;
+}
+.nav ul li a:hover{
+    /* outline: 2px solid; */
+    color: #000;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.637);
+}
+.search{
+    color: #0000005e;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 130px;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.menu{
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    float: right;
+    line-height: 80px;
+    margin-right: -140px;
+    outline: 2px solid red;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1168px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .subscribe {
+        height: 30px;
+    }
+    .subscribe p{
+        font-size: 13px;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        /* outline: 2px solid red; */
+        margin-top: -40px;
+    }
+    ul{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background-color: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 6%;
+    }
+
+}
+
+.logo img{
+    width: 13rem;
+    height: 13rem;
+    /* outline: 2px solid; */
+    
+}
+.icon{
+    outline: 2px solid rgb(3, 1, 1);
+    padding: 3.5px 7.1px;
+    height: 20px;
+    width: 1.5rem;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-image: url(./images/cart-alt-solid-24.png);
+    color: rgb(245, 245, 245);
+    /* background-color: black; */
+    cursor: pointer;
+}
+.inactive{
+   display: none; 
+
+}
+.buttonsearch {
+    outline: wpx solid red;
+}
+#cart-icon{
+    /* outline: 2px solid rgb(248, 14, 14); */
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+/* Cart */
+.cart{
+    position:fixed;
+    top: 0; 
+    right: 0;
+    /* outline: 2px solid red; */
+    width: 490px;
+    height: 100vh;
+    padding: 20px;
+    /* background: var(--bg-color); */
+    background-color: #b4b4c5;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    z-index: 200;
+}
+
+.cart-active{
+    right: 0;
+}
+.cart-title{
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 2rem; 
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    margin-top: 1rem;
+    /* outline: 20px solid red; */
+}
+.cart-img{
+    /* outline: 2px solid red; */
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    /* outline: 2px solid red; */
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid red;
+    outline-color: red;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    /* outline: 2px solid rgb(4, 0, 255); */
+    padding: 20px;
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: var(--text-color);
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.about h1{
+    border-bottom: 3px solid;
+    margin-left: 4%;
+    font-size: 3rem;
+}
+.about h3{
+    color: #00000070;
+    margin: 90px;
+    margin-left: 4%;
+    width: 75%;
+    font-size: 23px;
+    line-height: 2.5rem;
+}
+
+footer{
+    
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    display: grid;
+    margin-top: 15%;
+    /* outline: 2px solid; */
+    background-color: #b4b4c54b;
+}
+footer img{
+    width: 25%;
+}
+.newsletter{
+    padding: 35px;
+    width: 91%;
+    /* outline: 2px solid ; */
+}
+.newsletter h2{
+    font-size: 2.2rem;
+}
+.newsletter h4{
+    color: #00000056;
+    margin-top: -2%;
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid white;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 44%;
+    border: 1.5px solid #262333;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 3px -3px black;
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+
+}
+.send-btn{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgb(14, 16, 82);
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 0;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-footer h3{
+    text-align: center;
+}
+footer .contact {
+    padding: 10%;
+    /* outline: 2px solid red; */
+}
+footer .contact h2{
+    font-size: 3rem;
+}
+footer .contact p{
+    margin-top: -5%;
+    color: #00000056;
+}
+footer .socials img{
+    border-radius: 20px;
+    width: 5%;
+    background-color: rgba(16, 10, 41, 0.432);
+}
+footer h5{
+    color: #665d5d77;
+    margin-top: 20%;
+}
